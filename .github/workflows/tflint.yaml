@@ -1,0 +1,16 @@
+name: TFLint Validation
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  validate_bootstraop:
+    name: TFLint Bootstrap
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: TFLint Test
+        uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/tflint@tflint
+        with:
+          folder_to_lint: bootstrap
