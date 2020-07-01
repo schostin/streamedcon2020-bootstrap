@@ -4,8 +4,8 @@ on:
     branches:
       - "*"
 jobs:
-  validate_bootstraop:
-    name: TFLint Bootstrap
+  validate_gsuite_groups:
+    name: TFLint Initial GSuite Groups
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout Code
