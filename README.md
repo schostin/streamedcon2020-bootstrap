@@ -70,18 +70,3 @@ version.
 This module creates the initial github organization setup repository. It also already created template files for Github actions and sets
 some required secrets like the Service Account key to use to authenticate against Google Cloud.
 This is needed in order to run the source code for the organization-setup within CloudBuild.
-
-## Tools
-
-### TFLint
-
-I am using [TFLint](https://github.com/terraform-linters/tflint) in version `v0.17.0` to lint the terraform files for basic stuff.
-The implemented and activated rules can be found in the file [.tflint.hcl](./.tflint.hcl). Documentation about those rules can be 
-found [here](https://github.com/terraform-linters/tflint/tree/master/docs/rules).
-
-TFLint currently supports AWS resources and terraform resources out of the box. Google Cloud support is being worked on. Contributions are
-welcome [here](https://github.com/terraform-linters/tflint-ruleset-google).
-
-### Github Actions
-
-For the bootstrap I am using Github actions to validate the terraform code with TFLint. Source code for that can be found in [.github](./.github).
