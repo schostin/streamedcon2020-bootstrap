@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "github.com/sebastianneb-streamedcon2020/terraform-module-github-actions-gcloud?ref=v1.1.0"
+  source = "github.com/sebastianneb-streamedcon2020/terraform-module-github-actions-gcloud?ref=v1.3.2"
 }
 
 dependency "seed_project" {
