@@ -13,5 +13,5 @@ jobs:
       - name: TFLint Test
         uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/tflint@tflint
         with:
-          folder_to_lint: bootstrap
+          folder_to_lint: initial_gsuite_groups
           path_to_config: ../.tflint.hcl
