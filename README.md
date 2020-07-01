@@ -28,6 +28,15 @@ the organization with access to all repositories. Since I personally don't want 
 * Terraform version >=  `v0.12.28`. Installation guides and source code can be found [here](https://github.com/hashicorp/terraform).
 * Terragrunt version >= `v0.23.0`. Installation guides and source code can be found [here](https://github.com/gruntwork-io/terragrunt).
 
+### Usage
+
+The depenencies are in order, so you could simply run `terragrunt apply-all` a nd got for it. Neverheless due to the bug listed below, you'll
+need to create the 2 groups `organization-admin` and `billing-admin` yourself. After that, cd into bootstrap and simply run `terragrunt apply`.
+After that run `terragrunt apply` in the organization-repository. This will create the github repository and and also link the credentials
+of the service account with Github Actions, so that it can be directly used in the new organization.
+
+## Terragrunt modules
+
 ### GSuite Groups Module
 
 #### SHOULD (2020-06-30)
