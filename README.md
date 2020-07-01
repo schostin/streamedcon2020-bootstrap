@@ -30,7 +30,7 @@ the organization with access to all repositories. Since I personally don't want 
 
 ### Usage
 
-#### Required environment variables:
+#### Required environment variables
 
 * `ORG_ID` --> The organization id of the organization to bootstrap.
 * `BILLING_ACCOUNT` --> The billing account id of the billing account that shall be used to create new projects.
@@ -40,6 +40,8 @@ the organization with access to all repositories. Since I personally don't want 
 * `GITHUB_TOKEN` --> The github token. Note: This token will be used to create further repositories as well!
 * `GITHUB_OWNER` --> The user oder organization under which the repositories will be created.
 * `GITHUB_TEMPLATE_REPOSITORY` --> The template repository within the user / organization to create the new repositories.
+
+#### Commands
 
 The depenencies are in order, so you could simply run `terragrunt apply-all` a nd got for it. Neverheless due to the bug listed below, you'll
 need to create the 2 groups `organization-admin` and `billing-admin` yourself. After that, cd into bootstrap and simply run `terragrunt apply`.
