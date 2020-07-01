@@ -14,3 +14,4 @@ jobs:
         uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/tflint@tflint
         with:
           folder_to_lint: bootstrap
+          path_to_config: ../.tflint.hcl
