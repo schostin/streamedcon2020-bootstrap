@@ -37,6 +37,7 @@ inputs = {
     "roles/compute.xpnAdmin",
     "roles/iam.securityAdmin",
     "roles/iam.serviceAccountAdmin",
+    "roles/iam.serviceAccountKeyAdmin",
     "roles/logging.configWriter",
     "roles/orgpolicy.policyAdmin",
     "roles/resourcemanager.folderAdmin",
